@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jovana Aires | Nail Designer & Mentoria</title>
+  <meta name="description" content="Jovana Aires - Especialista em Nail Design de Alto Padrão, Cursos e Mentoria Individual.">
+  
+  <!-- Google Fonts: Playfair Display + Plus Jakarta Sans + Cinzel -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome 6 Pro-feel Free Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Folha de Estilos -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Iluminação ambiente de luxo -->
+  <div class="spotlight-top"></div>
+  <div class="ambient-glow glow-left"></div>
+  <div class="ambient-glow glow-right"></div>
+
+  <main class="page-wrapper">
+    
+    <!-- ==========================================
+         CABEÇALHO DE PERFIL
+         ========================================== -->
+    <header class="profile-section">
+      <div class="avatar-container">
+        <div class="avatar-glow"></div>
+        <div class="avatar-frame">
+          <img src="assets/jovana_aires.png" alt="Jovana Aires Nail Designer" class="avatar-image">
+        </div>
+        <div class="avatar-badge" title="Especialista Verificada">
+          <i class="fa-solid fa-check"></i>
+        </div>
+      </div>
+
+      <h1 class="profile-title">Jovana Aires</h1>
+      <p class="profile-subtitle">Nail Designer & Mentora</p>
+      
+      <p class="profile-cta-text">
+        Responda 5 perguntas e descubra<br>
+        o melhor caminho pra crescer comigo <span class="arrow-down">↓</span>
+      </p>
+
+      <!-- Redes Sociais: Apenas Instagram e TikTok -->
+      <nav class="social-bar" aria-label="Redes Sociais">
+        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Instagram">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="TikTok">
+          <i class="fa-brands fa-tiktok"></i>
+        </a>
+      </nav>
+    </header>
+
+    <!-- ==========================================
+         LISTA DE CARDS E LINKS
+         ========================================== -->
+    <section class="cards-stack">
+
+      <!-- 1. Como eu posso te ajudar? -->
+      <div class="luxury-card card-action" id="card-ajuda" role="button" tabindex="0" onclick="openModal('modal-quiz')">
+        <div class="card-icon-wrap">
+          <i class="fa-solid fa-bolt-lightning"></i>
+        </div>
+        <div class="card-text-group">
+          <h2 class="card-heading">Como eu posso te ajudar?</h2>
+          <p class="card-caption">Vamos entender seu momento atual e indicar a melhor solução</p>
+        </div>
+        <div class="card-chevron">
+          <i class="fa-solid fa-arrow-right"></i>
+        </div>
+      </div>
+
+      <!-- 2. Mentoria Jovana Aires -->
+      <div class="luxury-card card-action" id="card-mentoria" role="button" tabindex="0" onclick="openModal('modal-mentoria')">
+        <div class="card-icon-wrap icon-star">
+          <i class="fa-solid fa-star"></i>
+        </div>
+        <div class="card-text-group">
+          <h2 class="card-heading">MENTORIA JOVANA AIRES</h2>
+          <p class="card-caption">Acelere o crescimento do seu negócio com acompanhamento individual.</p>
+        </div>
+        <div class="card-chevron">
+          <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </div>
+      </div>
+
+      <!-- 3. Cursos (Pop-up Iniciante e Avançado) -->
+      <div class="luxury-card card-action" id="card-cursos" role="button" tabindex="0" onclick="openModal('modal-cursos')">
+        <div class="card-icon-wrap icon-academy">
+          <i class="fa-solid fa-graduation-cap"></i>
+        </div>
+        <div class="card-text-group">
+          <h2 class="card-heading">CURSOS & FORMAÇÕES</h2>
+          <p class="card-caption">Cursos para iniciantes do zero e especializações avançadas.</p>
+        </div>
+        <div class="card-chevron">
+          <i class="fa-solid fa-arrow-right"></i>
+        </div>
+      </div>
+
+      <!-- 4. Card WhatsApp Atendimentos -->
+      <div class="whatsapp-banner-card" id="card-whatsapp" role="button" tabindex="0" onclick="openModal('modal-atendimentos')">
+        <div class="wa-header-row">
+          <div class="wa-icon-box">
+            <i class="fa-brands fa-whatsapp"></i>
+          </div>
+          <div class="wa-details">
+            <h2 class="wa-main-title">WhatsApp</h2>
+            <span class="wa-number-badge">+55 47 8472-0975</span>
+          </div>
+        </div>
+        <div class="wa-tagline">ATENDIMENTOS E CURSOS</div>
+        
+        <div class="wa-cta-pill">
+          <span>Iniciar conversa</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </div>
+      </div>
+
+      <!-- 5. Seção Meus Produtos (Em Breve) -->
+      <div class="products-section">
+        <div class="section-badge-title">
+          <i class="fa-solid fa-play"></i> MEUS PRODUTOS
+        </div>
+        <div class="locked-display-card">
+          <div class="locked-icon-halo">
+            <i class="fa-solid fa-lock"></i>
+          </div>
+          <h3 class="locked-status">EM BREVE</h3>
+          <p class="locked-text">Novos lançamentos e produtos exclusivos sendo preparados.</p>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ==========================================
+         RODAPÉ
+         ========================================== -->
+    <footer class="site-footer">
+      <div class="footer-logo">
+        <span class="footer-name">Jovana Aires</span>
+        <span class="footer-tag">Nail Academy & Luxury Studio</span>
+      </div>
+      <p class="footer-copy">© 2026 Jovana Aires. Todos os direitos reservados.</p>
+    </footer>
+
+  </main>
+
+  <!-- ==========================================
+       MODAIS INTERATIVOS
+       ========================================== -->
+
+  <!-- MODAL 1: FUNIL / COMO POSSO TE AJUDAR? -->
+  <div class="modal-overlay" id="modal-quiz">
+    <div class="modal-box">
+      <button class="btn-close-modal" onclick="closeModal('modal-quiz')" aria-label="Fechar">&times;</button>
+      
+      <div class="modal-top">
+        <div class="modal-icon-badge"><i class="fa-solid fa-bolt-lightning"></i></div>
+        <h3 class="modal-main-title">Como eu posso te ajudar?</h3>
+        <p class="modal-sub-title">Selecione seu objetivo para falar diretamente comigo:</p>
+      </div>
+
+      <div class="quiz-btn-list">
+        <button class="quiz-opt-btn" onclick="sendCustomWhatsApp('Olá Jovana! Gostaria de agendar um atendimento para fazer minhas unhas.')">
+          <div class="quiz-opt-icon"><i class="fa-solid fa-hand-sparkles"></i></div>
+          <div class="quiz-opt-body">
+            <strong>Quero agendar meu atendimento</strong>
+            <span>Alongamento em gel, fibra, blindagem ou manutenção</span>
+          </div>
+          <i class="fa-solid fa-chevron-right arrow-indicator"></i>
+        </button>
+
+        <button class="quiz-opt-btn" onclick="sendCustomWhatsApp('Olá Jovana! Quero começar do zero na profissão e saber sobre o Curso Iniciante.')">
+          <div class="quiz-opt-icon"><i class="fa-solid fa-seedling"></i></div>
+          <div class="quiz-opt-body">
+            <strong>Quero aprender do zero (Iniciante)</strong>
+            <span>Entrar na profissão de Nail Designer e faturar</span>
+          </div>
+          <i class="fa-solid fa-chevron-right arrow-indicator"></i>
+        </button>
+
+        <button class="quiz-opt-btn" onclick="sendCustomWhatsApp('Olá Jovana! Já sou Nail Designer e quero saber sobre os Cursos Avançados.')">
+          <div class="quiz-opt-icon"><i class="fa-solid fa-gem"></i></div>
+          <div class="quiz-opt-body">
+            <strong>Aperfeiçoamento Avançado / Master</strong>
+            <span>Formatos europeus, agilidade em mesa e acabamento perfeito</span>
+          </div>
+          <i class="fa-solid fa-chevron-right arrow-indicator"></i>
+        </button>
+
+        <button class="quiz-opt-btn" onclick="sendCustomWhatsApp('Olá Jovana! Quero me candidatar para a sua Mentoria Individual.')">
+          <div class="quiz-opt-icon"><i class="fa-solid fa-star"></i></div>
+          <div class="quiz-opt-body">
+            <strong>Mentoria Individual VIP</strong>
+            <span>Acompanhamento direto para acelerar seu negócio</span>
+          </div>
+          <i class="fa-solid fa-chevron-right arrow-indicator"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL 2: MENTORIA JOVANA AIRES -->
+  <div class="modal-overlay" id="modal-mentoria">
+    <div class="modal-box">
+      <button class="btn-close-modal" onclick="closeModal('modal-mentoria')" aria-label="Fechar">&times;</button>
+      
+      <div class="modal-top">
+        <div class="modal-icon-badge"><i class="fa-solid fa-star"></i></div>
+        <span class="pill-badge-gold">EXCLUSIVA</span>
+        <h3 class="modal-main-title">Mentoria Jovana Aires</h3>
+        <p class="modal-sub-title">Acompanhamento individual e estratégico para Nail Designers que querem se posicionar no topo.</p>
+      </div>
+
+      <div class="mentoria-points">
+        <div class="point-row">
+          <i class="fa-solid fa-circle-check"></i>
+          <span>Posicionamento de alto valor & precificação correta</span>
+        </div>
+        <div class="point-row">
+          <i class="fa-solid fa-circle-check"></i>
+          <span>Método de agilidade em mesa com padrão impecável</span>
+        </div>
+        <div class="point-row">
+          <i class="fa-solid fa-circle-check"></i>
+          <span>Atração e fidelização de clientes que pagam bem</span>
+        </div>
+        <div class="point-row">
+          <i class="fa-solid fa-circle-check"></i>
+          <span>Encontros individuais e suporte direto no WhatsApp</span>
+        </div>
+      </div>
+
+      <button class="btn-primary-action" onclick="sendCustomWhatsApp('Olá Jovana! Gostaria de me candidatar para a Mentoria Individual.')">
+        <span>Candidatar-se à Mentoria</span>
+        <i class="fa-solid fa-arrow-right"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- MODAL 3: CURSOS (INICIANTE & AVANÇADO) -->
+  <div class="modal-overlay" id="modal-cursos">
+    <div class="modal-box">
+      <button class="btn-close-modal" onclick="closeModal('modal-cursos')" aria-label="Fechar">&times;</button>
+      
+      <div class="modal-top">
+        <div class="modal-icon-badge"><i class="fa-solid fa-graduation-cap"></i></div>
+        <h3 class="modal-main-title">Nossos Cursos</h3>
+        <p class="modal-sub-title">Escolha o nível ideal para a sua jornada profissional:</p>
+      </div>
+
+      <div class="courses-cards-container">
+        
+        <!-- Curso Iniciante -->
+        <div class="course-item-box">
+          <div class="course-header-tag tag-blue">CURSO INICIANTE</div>
+          <h4 class="course-name">Formação Nail Designer do Zero</h4>
+          <p class="course-summary">Ideal para quem nunca pegou em uma lixa. Aprenda preparação correta, controle de produto, aplicação e acabamento de fibra e gel.</p>
+          <ul class="course-check-list">
+            <li><i class="fa-solid fa-check"></i> Anatomia da lâmina e biossegurança</li>
+            <li><i class="fa-solid fa-check"></i> Aplicação de Fibra de Vidro e Gel</li>
+            <li><i class="fa-solid fa-check"></i> Certificado de Formação Profissional</li>
+          </ul>
+          <button class="course-action-btn" onclick="sendCustomWhatsApp('Olá Jovana! Quero saber detalhes e valores do Curso Iniciante do Zero.')">
+            <span>Ver detalhes do Iniciante</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+
+        <!-- Curso Avançado -->
+        <div class="course-item-box featured-course">
+          <div class="course-header-tag tag-gold">CURSO AVANÇADO / MASTER</div>
+          <h4 class="course-name">Master Especialização & Formatos</h4>
+          <p class="course-summary">Para profissionais que querem dominar simetria perfeita, formatos europeus (Almond, Ballerina, Stiletto) e agilidade em mesa.</p>
+          <ul class="course-check-list">
+            <li><i class="fa-solid fa-check"></i> Formatos Europeus e Estruturas Slim</li>
+            <li><i class="fa-solid fa-check"></i> Otimização de tempo e lixamento técnico</li>
+            <li><i class="fa-solid fa-check"></i> Certificado Master de Especialização</li>
+          </ul>
+          <button class="course-action-btn gold-btn" onclick="sendCustomWhatsApp('Olá Jovana! Quero saber detalhes e valores do Curso Master Avançado.')">
+            <span>Ver detalhes do Avançado</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL 4: ATENDIMENTOS -->
+  <div class="modal-overlay" id="modal-atendimentos">
+    <div class="modal-box">
+      <button class="btn-close-modal" onclick="closeModal('modal-atendimentos')" aria-label="Fechar">&times;</button>
+      
+      <div class="modal-top">
+        <div class="modal-icon-badge wa-badge"><i class="fa-brands fa-whatsapp"></i></div>
+        <h3 class="modal-main-title">Agendamento de Atendimento</h3>
+        <p class="modal-sub-title">Escolha o serviço desejado para agendar seu horário:</p>
+      </div>
+
+      <div class="services-btn-list">
+        <div class="service-pick" onclick="sendCustomWhatsApp('Olá Jovana! Gostaria de agendar um Alongamento em Gel.')">
+          <div>
+            <strong>Alongamento em Gel Moldado / Tip</strong>
+            <span>Acabamento natural, resistente e elegante</span>
+          </div>
+          <i class="fa-solid fa-arrow-right"></i>
+        </div>
+
+        <div class="service-pick" onclick="sendCustomWhatsApp('Olá Jovana! Gostaria de agendar um Alongamento em Fibra de Vidro.')">
+          <div>
+            <strong>Fibra de Vidro Slim</strong>
+            <span>Curvatura C impecável e máxima durabilidade</span>
+          </div>
+          <i class="fa-solid fa-arrow-right"></i>
+        </div>
+
+        <div class="service-pick" onclick="sendCustomWhatsApp('Olá Jovana! Gostaria de agendar Blindagem / Banho de Gel.')">
+          <div>
+            <strong>Blindagem & Banho de Gel</strong>
+            <span>Fortalecimento e brilho para unhas naturais</span>
+          </div>
+          <i class="fa-solid fa-arrow-right"></i>
+        </div>
+
+        <div class="service-pick" onclick="sendCustomWhatsApp('Olá Jovana! Gostaria de agendar uma Manutenção / Decoração.')">
+          <div>
+            <strong>Manutenção & Nail Art</strong>
+            <span>Renovação e decorações personalizadas</span>
+          </div>
+          <i class="fa-solid fa-arrow-right"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
