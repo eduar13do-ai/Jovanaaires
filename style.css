@@ -922,7 +922,7 @@ body {
 
 .service-pick {
   background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(37, 211, 102, 0.2);
+  border: 1px solid rgba(212, 175, 55, 0.2);
   border-radius: var(--radius-md);
   padding: 13px 15px;
   display: flex;
@@ -934,8 +934,8 @@ body {
 }
 
 .service-pick:hover {
-  background: rgba(37, 211, 102, 0.08);
-  border-color: var(--wa-accent);
+  background: rgba(212, 175, 55, 0.08);
+  border-color: var(--gold-primary);
   transform: translateY(-2px);
 }
 
@@ -953,12 +953,13 @@ body {
 }
 
 .service-pick i {
-  color: var(--wa-accent);
+  color: var(--gold-light);
   font-size: 0.85rem;
   transition: var(--transition);
 }
 
 .service-pick:hover i {
+  color: var(--gold-primary);
   transform: translateX(4px);
 }
 
