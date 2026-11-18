@@ -55,6 +55,14 @@
   -webkit-tap-highlight-color: transparent;
 }
 
+a,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
 body {
   font-family: 'Plus Jakarta Sans', sans-serif;
   background-color: var(--bg-page);
@@ -264,6 +272,8 @@ body {
 }
 
 .luxury-card {
+  text-decoration: none;
+  color: inherit;
   background: var(--bg-card);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
